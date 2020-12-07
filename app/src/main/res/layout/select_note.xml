@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211859"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    tools:context=".SelectNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="0dp"
+        android:weightSum="3"
+        android:background="#211859">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#261A73"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="Rejestracja"
+            android:textColor="#F2E205"
+            android:textSize="15dp"
+            android:onClick="openReg"/>
+
+        <TextView
+            android:id="@+id/mainNote"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#27188C"
+            android:gravity="center"
+            android:text="Note"
+            android:textColor="#F2E205"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="#261A73"
+            android:gravity="center|right"
+            android:padding="10dp"
+            android:text="Logowanie"
+            android:textColor="#F2E205"
+            android:textSize="15dp"
+            android:onClick="openLogIn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars = "vertical">
+        <Button
+            android:id="@+id/textNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D9D059"
+            android:layout_marginTop="50dp"
+            android:textColor="#27188C"
+            android:layout_marginHorizontal="100dp"
+            android:text="Notatka tekstowa" />
+
+        <Button
+            android:id="@+id/imgNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#D9D059"
+            android:textColor="#27188C"
+            android:layout_marginHorizontal="100dp"
+            android:text="Notatka obrazkowa" />
+
+        <Button
+            android:id="@+id/voiceNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D9D059"
+            android:layout_marginTop="50dp"
+            android:textColor="#27188C"
+            android:layout_marginHorizontal="100dp"
+            android:text="Notatka głosowa" />
+
+        <Button
+            android:id="@+id/backStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D9D059"
+            android:layout_marginTop="50dp"
+            android:textColor="#27188C"
+            android:layout_marginHorizontal="100dp"
+            android:text="Wróć" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211859"
+    android:orientation="vertical"
+    tools:context=".AutenticationActivity">
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Podaj kod"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="#F2E205"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/bottom_line"
+        android:ems="10"
+        android:hint="Wpisz kod"
+        android:textColorHint="#F2E205"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="#F2E205"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/acceptRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D9D059"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="100dp"
+        android:text="zatwierdz"
+        android:textColor="#27188C"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D9D059"
+        android:layout_marginHorizontal="100dp"
+        android:text="wróć"
+        android:textColor="#27188C"
+        android:onClick="backLogIn"/>
+</LinearLayout>

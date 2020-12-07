@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211859"
+    android:orientation="vertical"
+    android:layout_weight="3"
+    tools:context=".MainScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="0dp"
+        android:weightSum="3"
+        android:background="#211859">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#261A73"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="Rejestracja"
+            android:textColor="#F2E205"
+            android:textSize="15dp"
+            android:onClick="openReg"/>
+
+        <TextView
+            android:id="@+id/mainNote"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#27188C"
+            android:gravity="center"
+            android:text="Note"
+            android:textColor="#F2E205"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="#261A73"
+            android:gravity="center|right"
+            android:padding="10dp"
+            android:text="Logowanie"
+            android:textColor="#F2E205"
+            android:textSize="15dp"
+            android:onClick="openLogIn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars = "vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:background="@drawable/border"
+                    android:onClick="showNote">
+
+                    <TextView
+                        android:id="@+id/title_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:background="#D9D059"
+                        android:gravity="center"
+                        android:text="Title"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/noteText_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="left"
+                        android:paddingHorizontal="10dp"
+                        android:text="Tekst notatki"
+                        android:textColor="#F2E205"
+                        android:textSize="16dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/title_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D9D059"
+                        android:gravity="center"
+                        android:text="Title"
+                        android:textColor="#000000"
+                        android:textSize="25dp"/>
+
+                    <TextView
+                        android:id="@+id/noteText_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="left"
+                        android:paddingHorizontal="10dp"
+                        android:text="Tekst notatki"
+                        android:textColor="#F2CB05"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/title_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D9D059"
+                        android:gravity="center"
+                        android:text="Title"
+                        android:textColor="#000000"
+                        android:textSize="25dp"/>
+
+                    <TextView
+                        android:id="@+id/noteText_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="left"
+                        android:paddingHorizontal="10dp"
+                        android:text="Tekst notatki"
+                        android:textColor="#F2CB05"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/title_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D9D059"
+                        android:gravity="center"
+                        android:text="Title"
+                        android:textColor="#000000"
+                        android:textSize="25dp"/>
+
+                    <TextView
+                        android:id="@+id/noteText_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="left"
+                        android:paddingHorizontal="10dp"
+                        android:text="Tekst notatki"
+                        android:textColor="#F2CB05"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/title_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D9D059"
+                        android:gravity="center"
+                        android:text="Title"
+                        android:textColor="#000000"
+                        android:textSize="25dp"/>
+
+                    <TextView
+                        android:id="@+id/noteText_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="0dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="left"
+                        android:paddingHorizontal="10dp"
+                        android:text="Tekst notatki"
+                        android:textColor="#F2CB05"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:onClick="noteSettings"
+            android:backgroundTint="#211859"
+            android:drawableLeft="@drawable/ic_setting_foreground"
+            android:gravity="center"
+            android:textSize="36dp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="#211859"
+            android:drawableRight="@drawable/ic_plus_foreground"
+            android:gravity="center"
+            android:textSize="36dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
